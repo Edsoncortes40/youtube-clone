@@ -1,0 +1,13 @@
+{
+  "name": "video-processing-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.ts"
+  },
+  "author": "",
+  "license": "ISC"
+}
