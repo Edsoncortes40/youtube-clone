@@ -5,6 +5,7 @@ import {getAuth,
     GoogleAuthProvider,
     onAuthStateChanged,
     User} from "firebase/auth"
+import { getFunctions } from "firebase/functions";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -19,6 +20,8 @@ const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
 
+// Used to invoke functions
+export const functions = getFunctions();
 /**
  * Signs the user in with a Google popup.
  * @returns A promise that resolves with the user's credentials.
